@@ -4,7 +4,7 @@ PPLGuard is a proof of concept tool that closes a userland Admin -> PPL privileg
 
 **This is a proof of concept.  Use it at your own risk.**
 
-See the related Elastic blog post [here](https://www.elastic.co/blog/protecting-windows-protected-processes-part-1) for more information.
+See the related Elastic blog post [here](https://www.elastic.co/blog/protecting-windows-protected-processes) for more information.
 
 This project is based heavily on [PPLDump](https://github.com/itm4n/PPLdump), with permission from the author.
 
