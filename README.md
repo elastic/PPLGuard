@@ -1,10 +1,10 @@
 # PPLGuard
 
+See [this blog post](https://www.elastic.co/blog/protecting-windows-protected-processes) for more information.
+
 PPLGuard is a proof of concept tool that closes a userland Admin -> PPL privilege escalation vulerability.  It does so by exploiting the vulnerability to elevate privileges, then using those privileges to apply a `GENERIC_WRITE` DENY ACL to `\KnownDlls` and `\KnownDlls32`, breaking a critical step in the exploit.  You can think of it like `sudo chmod 555 \KnownDlls`, with an elaborate `sudo`.
 
 **This is a proof of concept.  Use it at your own risk.**
-
-See the related Elastic blog post [here](https://www.elastic.co/blog/protecting-windows-protected-processes) for more information.
 
 This project is based heavily on [PPLDump](https://github.com/itm4n/PPLdump), with permission from the author.
 
