@@ -24,6 +24,9 @@ BOOL ParseArguments(int argc, wchar_t* argv[])
 		case 'f':
 			g_bForce = TRUE;
 			break;
+		case 'a':
+			g_bHardenAMPPLOnly = TRUE;
+			break;
 		default:
 			wprintf(L"[-] Invalid option: %ws\n", argv[1]);
 			bReturnValue = FALSE;
@@ -59,7 +62,7 @@ VOID PrintUsage()
 		"based on PPLDump by %ws by %ws\n"
 		"\n"
 		"Description:\n"
-		"  Use a userland Admin -> PPL exploit to mitigate itself until reboot.\n"
+		"  Use a userland Admin -> PP exploit to mitigate itself until reboot.\n"
 		"\n",
 		VERSION, AUTHOR,
 		FORK_VERSION, FORK_AUTHOR
@@ -67,7 +70,7 @@ VOID PrintUsage()
 
 	wprintf(
 		L"Usage: \n"
-		"  PPLGuard.exe [-v] [-d] [-f]\n"
+		"  PPLGuard.exe [-v] [-d] [-f] [-a]\n"
 		"\n"
 	);
 
@@ -76,6 +79,7 @@ VOID PrintUsage()
 		"  -v         (Verbose) Enable verbose mode\n"
 		"  -d         (Debug) Enable debug mode (implies verbose)\n"
 		"  -f         (Force) Bypass DefineDosDevice error check\n"
+		"  -a         (AntiMalware) Instead of hardening KnownDlls, harden the tokens of AntiMalware processes\n"
 		"\n"
 	);
 

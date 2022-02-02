@@ -35,6 +35,7 @@ HANDLE g_hConsoleOutput = NULL;
 LPWSTR g_pwszGuid = NULL;
 BOOL g_bVerbose = FALSE;
 BOOL g_bDebug = FALSE;
+BOOL g_bHardenAMPPLOnly = FALSE;
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved)
 {

@@ -16,11 +16,12 @@
 #define FORK_AUTHOR L"@itm4n"
 #define FORK_VERSION L"0.4"
 #define AUTHOR L"@gabriellandau"
-#define VERSION L"0.1"
+#define VERSION L"0.2"
 
 extern BOOL g_bVerbose;
 extern BOOL g_bDebug;
 extern BOOL g_bForce;
+extern BOOL g_bHardenAMPPLOnly;
 
 BOOL ParseArguments(int argc, wchar_t* argv[]);
 VOID PrintArguments();
