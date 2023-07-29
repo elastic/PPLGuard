@@ -1,5 +1,11 @@
 # PPLGuard
 
+By [Gabriel Landau](https://twitter.com/GabrielLandau) at [Elastic Security](https://www.elastic.co/security-labs/).
+
+**Update 2023-07-29**
+Microsoft has since patched both of these vulnerabilities.  You can read more about the LPE patch [here](https://itm4n.github.io/the-end-of-ppldump/) and the token nerfing patch [here](https://twitter.com/yarden_shafir/status/1628049645896183809).
+
+### Introduction
 PPLGuard is a proof of concept tool that can mitigate two currently-unpatched Windows security flaws which pose threats to Protected Processes Light (PPL) processes, such as AntiMalware services.
 To apply these mitigations, PPLGuard exploits an unpatched Windows local privilege escalation vulnerability to execute code with `WinTcb` Protected Processs (PP) privileges.
 
