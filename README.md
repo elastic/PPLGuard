@@ -24,7 +24,7 @@ PPLGuard can also harden AntiMalware PPL processes against token nerfing attacks
 This trust label prevents modification of the token by non-PPL processes.
 Adding this trust label requires execution as PPL, so PPLGuard employs the aforementioned `WinTcb` exploit.
 
-See [this article](https://elastic.github.io/security-research/whitepapers/2022/02/02.sandboxing-antimalware-products-for-fun-and-profit/article/) for for more information about this attack and mitigation.
+See [this article](https://www.elastic.co/security-labs/sandboxing-antimalware-products) for for more information about this attack and mitigation.
 
 **This is a proof of concept.  Use it at your own risk.**
 
